@@ -1,3 +1,4 @@
+
 const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector("#site-nav");
@@ -8,10 +9,7 @@ const revealItems = document.querySelectorAll(".reveal");
 
 const year = document.querySelector("#year");
 
-
-// --------------------------------------------------
 // Header scroll effect
-// --------------------------------------------------
 
 function setHeaderState() {
   if (window.scrollY > 12) {
@@ -27,10 +25,7 @@ window.addEventListener("scroll", setHeaderState, {
 
 setHeaderState();
 
-
-// --------------------------------------------------
 // Mobile navigation
-// --------------------------------------------------
 
 function closeMenu() {
   siteNav.classList.remove("open");
@@ -58,7 +53,6 @@ if (menuToggle) {
   });
 }
 
-
 // Close mobile menu after clicking a navigation link
 
 navLinks.forEach((link) => {
@@ -66,7 +60,6 @@ navLinks.forEach((link) => {
     closeMenu();
   });
 });
-
 
 // Close mobile menu when pressing Escape
 
@@ -76,10 +69,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-
-// --------------------------------------------------
 // Reveal animations when sections enter the screen
-// --------------------------------------------------
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -100,10 +90,7 @@ revealItems.forEach((item) => {
   revealObserver.observe(item);
 });
 
-
-// --------------------------------------------------
 // Highlight the current navigation section
-// --------------------------------------------------
 
 const sectionObserver = new IntersectionObserver(
   (entries) => {
@@ -134,10 +121,7 @@ sections.forEach((section) => {
   sectionObserver.observe(section);
 });
 
-
-// --------------------------------------------------
 // Automatically display the current year in the footer
-// --------------------------------------------------
 
 if (year) {
   year.textContent = new Date().getFullYear();
