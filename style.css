@@ -1,3 +1,4 @@
+
 :root {
   --bg: #f6f6f2;
   --surface: #ffffff;
@@ -320,9 +321,9 @@ summary:focus-visible {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center 48%;
+  object-position: center 40%;
   filter: saturate(.96);
-  transition: transform .55s cubic-bezier(.2,.7,.2,1);
+  transition: transform .55s cubic-bezier(.2, .7, .2, 1);
 }
 
 .photo-frame:hover img {
@@ -517,7 +518,7 @@ summary:focus-visible {
 .leadership-card:hover {
   transform: translateY(-4px);
   border-color: #c9c9c1;
-  box-shadow: 0 15px 35px rgba(0,0,0,.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .05);
 }
 
 .card-topline {
@@ -633,7 +634,7 @@ summary:focus-visible {
 .current-card > p {
   align-self: end;
   margin: 0;
-  color: rgba(255,255,255,.7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .contact-section {
